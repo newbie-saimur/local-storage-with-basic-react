@@ -1,8 +1,8 @@
 # React + Vite
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-wet--queen.surge.sh-brightgreen?style=for-the-badge)](https://wet-queen.surge.sh)
+[![Live Demo](https://img.shields.io/badge/Live%20Site-wet--queen.surge.sh-brightgreen?style=for-the-badge)](https://wet-queen.surge.sh)
 
-**Live Site:** [https://wet-queen.surge.sh](https://wet-queen.surge.sh)
+**Live Demo:** [https://wet-queen.surge.sh](https://wet-queen.surge.sh)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

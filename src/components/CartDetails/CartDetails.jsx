@@ -2,7 +2,7 @@ const CartDetails = ({item}) => {
 
     return (
         <div>
-            <img src={item.img} alt={item.name} className="w-[80px]"/>
+            <img src={item.img} alt={item.name} className="w-[80px] rounded-xs"/>
         </div>
     );
 };

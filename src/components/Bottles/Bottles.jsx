@@ -29,8 +29,9 @@ const Bottles = () => {
     }
 
     useEffect(() => {
-        const cartItems = localStorage.getItem('cart');
-        setCart(cartItems ? JSON.parse(cartItems) : [])
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        const newCart = cartItems.map(id => bottles.find(bottle => bottle.id === id)).filter(Boolean);
+        setCart(newCart)
     }, [bottles]);
 
     return (
@@ -38,7 +39,6 @@ const Bottles = () => {
             <div className="flex justify-between">
                 <h3 className="mb-4 pl-2">Bottles: {bottles.length}</h3>
                 <Cart cart={cart} />
-
             </div>
             <div className="grid grid-cols-3 gap-6">
             {
